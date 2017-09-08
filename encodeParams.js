@@ -16,9 +16,9 @@ const encodedParamsContribution = abiEncoder.rawEncode(['address', 'address', 'a
 console.log('ENCODED PARAMS CONTRIBUTION: \n',encodedParamsContribution.toString('hex'));
 
 //Tier
-const totalCap = new BigNumber(10 ** 18 *2); //2eth
-const minimum = new BigNumber(10**18 * 0.2); //0.2eth
-const maxInvestorCap = new BigNumber(10 ** 18 * 1 ); //1 eth
+const totalCap = new BigNumber(Math.pow(10,18) * 2); //2eth
+const minimum = new BigNumber(Math.pow(10,18)* 0.2); //0.2eth
+const maxInvestorCap = new BigNumber(Math.pow(10,18) * 1 ); //1 eth
 const exchangeRate= 1000;
 const startTime= 1503000000;
 const endTime= 1504000000;
